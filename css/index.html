@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+     <nav>
+        <ul>
+            <li><a href="/css/index.html">Index</a></li>
+            <li><a href="/css/two.html">Two</a></li>
+        </ul>
+    </nav>
+    <h1 class="fullstack">
+        hello welcome to fullstack
+    </h1>
+    <p class="jumping" id="hello">android development is fun but not funner than fullstack</p>
+
+    <p>welcome john</p>
+    <form action="127.0.0.1" method="post">
+<!--     input text >>used to take in texual data ,ie>>strings
+ -->    
+<div>
+    <label for="fname">Firstname:</label>
+    <input type="text" name="firstname" id="fname" placeholder="John" required maxlength="20" minlength="4">
+</div>
+
+<div>
+
+    <label for="sname">Secondname:</label>
+    <input type="text" name="secondname" id="sname" placeholder="Doe" required>
+</div>
+
+    
+
+<!--     input number >>used to take in numbers with anincrement and decrement tool
+ -->
+<div>
+    <label for="num">Phone</label>
+    <input type="text" name="phone" id="num" value="+254" required>
+</div>
+
+
+<!--  input email>>takes in email values 
+ -->
+<div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="sandra@gmail.com" required>
+</div>
+ 
+
+<!--  input date>>consists of a callendar that takes in a day month and year 
+ -->
+<div>
+    <label for="dob">Date of Birth </label>
+    <input type="date" name="date" id="dob" required>
+</div>
+
+
+
+<!-- radio >>  is a singe select input type 
+ it uses the name attribute to relate and connect with each other select options 
+
+ -->
+ <label for="geder">What is your gender?</label>
+
+<div>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="Male"  required>
+   <br>
+   <label for="female">Female</label>
+   <input type="radio" name="gender" id="female" value="female" required >
+
+</div>
+<!-- checkbox>>allows multiple selections 
+ -->
+
+ <label for="hobby">Hobbies</label>
+
+ <div>
+     <label for="john">Swimming</label>
+    <input type="checkbox" name="swimming" id="john ">
+    <label for="sandra">Singing</label>
+    <input type="checkbox" name="singing" id="sandra">  
+     <label for="hope">horse riding</label>
+    <input type="checkbox" name="horse-riding" id="hope"> 
+      <label for="dennis">football</label>
+    <input type="checkbox" name="football" id="dennis "> 
+      <label for="crisping">movies</label>
+    <input type="checkbox" name="movies" id="crispng"> 
+      
+ </div>
+
+<!--  selection>>gives you a list of options to select from where it is static (they dispaly in a fixed manner )  
+otpion tag to define the various options >>it has both the opening and closing tag  
+-->
+<label for="courses">Eldohub's Courses:</label>
+  <select name="Course" id="courses" selected="Fullstack" size="5">
+      <option value="Fullstack">Fullstack</option>
+      <option value="cybersecurity">Cyber Security</option>
+      <option value="datascience">Data science</option>
+      <option value="graphics">Graphics Design</option>
+      <option value="android">Android Development</option>
+  </select>
+<!--  datalist>>which displays a selection of options and filters on search of keyword
+  the otpiton tg has only the opening tag
+  it uses the input to to link the datalist options to the input type which is a search by default 
+-->
+  <br>
+  <div>
+    <label for="countries">East Africa Countries</label>
+    <input list="search">
+    <datalist id="search">
+      <option value="Eritrea">
+      <option value="Djibouti">
+      <option value="Sudan">
+      <option value="Kenya">
+      <option value="Uganda">
+      <option value="Tanzania">
+      <option value="Burundi">
+      <option value="Rwanda">
+      <option value="Somalia">
+    </datalist>
+  </div>
+ 
+
+
+<!-- button>>used for form submissions and it has different types {
+    button reset >>resets a form 
+    button submit>>submitts a form
+} -->
+    <div>
+
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+
+</body>
+</html>

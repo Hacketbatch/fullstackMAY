@@ -1,0 +1,107 @@
+<!-- hypertext markup anguage is a languagethat is used to give structure to the content of the website 
+it uses tags to define this structure 
+it has a simple syntax defined by {
+    <>:opening tag
+    </>:closing tag 
+    no text should be outside html tags else you will ot style them \
+
+}
+the html tags syntax include :
+doctypehtml:specifies that this is a html document 
+this is the only tag that is outside th html tags 
+html tags >>encloses everything in a html document ,it carries the encoding language which by default is english 
+head tag>>compses of the title tag that gives the title name and description to your website/application 
+the other function is that it is the linkage tag to any other resource in your website wether{
+    meta tags >>contain metadata "this is data to other data"
+    css linkages
+    fonts
+    framewroks(bootstrap,tailwind)
+    icons 
+}
+nothing on these tags above is seen by the user on the screen
+body{
+this composes of the visible tags that denote thte content of a website 
+}
+the default way to come up with this (shift +1)!
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- heading tag >>they are six in number and they are hierachical in nature {{as you progress donwwards the fontsize decreases }}
+    THEY ARE USED TO DEFINE HEADERS  -->
+    <h1>My name is Peter</h1>
+    <h2>My name is hope</h2>
+    <h3>My name is sandra</h3>
+    <h4>My name is dennis</h4>
+    <h5>My name is Martin</h5>
+    <h6>We are taking fullstack </h6>
+    
+<!--     paragraph tag >>used to hold content with description
+     br>>it ois a tag that is used to statically break the content and it does not thave a partner
+     hr>>used to give a horizontal line through the page 
+     multiline comment >>select everything you want to comment then (alt+shift+A)
+     single line comment (//)
+ -->  
+     <hr>  
+<p>I am a fullstack web developer with a tone of experience and i would like to <br>offer my knowledge to new tech enthusists that are beginning their tech journey 
+    always remember <br> coding is hard until you make it a habbit then it becomes fun
+</p>
+ 
+<!-- <span></span>used to define short components of a related field (prices ) 
+ strikethrough tag is used to give a line throught text statically 
+-->
+<span> <strike>kshs 1000</strike></span><br>
+<span>kshs 999</span>
+
+<!-- subscript >>used to denote the base of something n a mathematical expression  (sub)
+superscript>>used to denote the power of something (sup)-->
+<br>
+
+   <span>Log<sub>10</sub>100</span>
+   <br>
+   <span>1000 <sup>3</sup></span>
+
+<!--    italic tag and the emphasy tag >>they both italisise content
+ -->   <i>hello dennis</i><!-- NON SEMANTIC -->
+   <em>hello frank</em><!-- SEMANTIC -->
+   <b>hello sandra</b>
+   <strong>hello hope</strong>
+
+   <div class="dev" style="background-color: red;padding:30px">
+    <h1 style="background-color:grey;padding:20px">hello i am parent child heading</h1>
+    <div class="first-child" style="background-color: magenta;padding:30px">
+       
+   
+        <p style="background-color:blueviolet;padding:16px;">was generated form the previous generation of html</p>
+        <div class="first-grandchild" style="background-color: burlywood;padding:10px">
+            <span style="background-color: green;">hello and perform this calculation today we will learn more   <span style="background-color: aquamarine;">log <sub>10</sub>1000</span></span>
+        </div>
+    </div>
+   </div>
+   
+<!--    div tag>>is a block level element container that holds other components as well as other divs 
+    created by the div tag as well as the default shortcut using the dot syntax which gives a default class name >>is the name that you will type in 
+ --><!--    bold and  strong>>used to shout out and bold ,make text have a heavy font weight
+   
+   article>>used to define an article semanticallay that quotes something that wont change or an event
+   footer>>its a tag that contain footer elements such as anchor links and links to additional information and asw ell copyright information 
+assignment
+   inline and block level elements 
+<a href=""></a>
+<img src="" alt="">
+<video src=""></video>
+<iframe src="" frameborder="0"></iframe>
+<table>
+    <tr>name</tr>
+    <td>peter</td>
+</table>
+non semantic tags
+semantic tags  -->
+
+</body>
+</html>

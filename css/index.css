@@ -1,0 +1,44 @@
+What is css(cascanding style sheet ) and how it is used in web development?
+this refres to cascanding style sheet and it is used for styling html content "webpage"
+how to use it in htm/xml
+css can be used in three ways {
+    inline>>css implementation done in the html tags "opening html tag using ht style attribute ",most ineffective method >tiresome in redundancy 
+    internal >>css implementation in the html tags using the style tags where you input your css code >>less redundant but you have to copy paste each code in every page you wan to target
+    external >>an external file with a .css extension ,it can be used in multipage webpages and reduces redundancy>>you only paste thelink to the css file inside the head 
+}
+types of selectors {
+    element selector /tag selector>>these are selectors thatare used to style the html contents via tag names (p,h,div)
+    class selector >>is a technique defined by the dot notation and it is used to styel components with the same class name ,it can take multiple classnames per one element 
+    {
+        .class1 {}
+    }
+    id>>this is a technique defined by the hash syntax and it is unique and only used once {
+        #id {}
+    }
+    universal selector>>defined by the asteric symbol in that * >>it used to style evry element in the webpage{
+        *{}
+    }
+    attribute selector>>uses the attribute name and the square brackets for the value (combines the tag name with attribute)
+    {
+        input>>referes to the tagname
+        type>attribute name 
+        input[type="name"]
+    }
+    pseiudo class selectors >>selectors that allows us to implement some advanced functionalities ,access children and grand children with ease 
+    {
+        :hover
+        :active
+        :nth-class
+        :nth-last -of -type
+        nth-child-selectors
+
+
+    }
+}
+rules of css {
+    cascanding 
+    inheritance 
+    specificity 
+    importance
+}
+
