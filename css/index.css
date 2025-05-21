@@ -36,9 +36,87 @@ types of selectors {
     }
 }
 rules of css {
-    cascanding 
-    inheritance 
-    specificity 
-    importance
+    cascanding >>this referes to the execution of the css code line by line >if a rule is on number 10 then anther rule is on number 40 targetting the same element ,then rule at number 40 will overwrite 
+    inheritance >>the child entities inheriuts the properties of the parent entity 
+    specificity >>this is the selector precedence (id,class,element selector .....)>>inline css can overule this when writte  with any selecotr 
+    importance>>using the important keyword ,this feature allows us to have a fixed style to an element even if it is overwriten by another rule
+}
+p{
+    background-color: red !important;
 }
 
+text properties >>this are properties that allows us to style texual components they include alignments ,positions 
+color >>denoted the color of the text 
+alignments >>classified into four mainly{
+:left>>text contnet on the left
+:right>>text contnet on the right
+center>>text contnet on the center
+justified >>text contnet on the left and right start and end at similar positions 
+} 
+measurements{
+    these are numerical figures that help us structure and visualize the layout features {
+        width:>>referes the the distance between the left and right side of the viewdisplay point 
+        height>>referes the the distance between the top and bottom side of the viewdisplay point 
+        vh >>viewpoert height >>meausrements given from a rage of 1-100
+        vw viewpoert width >>meausrements given from a rage of 1-100
+        px >>
+        rem >>this referes to measurements in relation to the font size of  parent measuremt(default 1rem/em=16px)
+        em 
+        %>>this one is the most flexible relative meaurement unit 
+
+    }
+}
+border{
+    border is an imaginary line that seperates contnet unless some styling is added to it {
+        properties of the border{
+            width>>denotes the thickness of the border 
+            color>>denotes the color of the border 
+            style>>denotes the structure of the border 
+            radius >>this refers to the curves at the specified edges of the container {
+                border-radius: >>transforms the entire div to a specified curvature at the edges 
+                border-bottom-left-radius: ;>>transforms the left bottom div to a specified curvature at the edges 
+                border-bottom-right-radius: ;transforms the right bottom div to a specified curvature at the edges 
+                border-top-left-radius: ;transforms the left top div to a specified curvature at the edges 
+                border-top-right-radius: ;transforms the right top  div to a specified curvature at the edges 
+            }
+        }
+    }
+}
+box model{
+    every element in html is considered to have a box layout(rectangle)with these it assumes three 
+    distinct features namely {
+        margin:a space in between two components /tags/elements:{
+            margin-top: ;>>space to the top of the specified  components 
+            margin-bottom: ;space to the bottom of the specified  components 
+            margin-left: ;space to the left of the specified  components 
+            margin-right: ;space to the right of the specified  components 
+            margin:;>>gives an all round margin to all the sides of the specified components
+            margin:top bottom left right;(margin:10px 20px 40px 30px;)
+            margin:auto;>>center a container in the middle of the parent container>>as long as this container is reduced in width
+        }
+        padding: its the space between the content of the a container and its border.
+        {
+            padding-top: ;>>space between content and border to the top side
+            padding-bottom: ;>>space between content and border to the bottom side
+            padding-left>>space between content and border to the leftside
+            padding-right>>space between content and border to the right  side
+        }
+        border:
+    }
+}
+backgrounds{
+    these are properties that allows us to manipulate background features of the context 
+    {
+        background-image: ;>>takes in a url that has a source origin to an image to be used in the background: ;
+        background-position: ;>>defined by different positions(top left ,right ,center)
+        background-size: ;>>defines the size of the background feature(cover"stretch to entire width" ,contain"within the borders of the content")
+        background-repeat: ;>>denotes wether a background feature will repeat itslef and in which direction it will do so and if not to repeat{
+            background-repeat: no-repeat ;
+            background-repeat: repeat-x ;
+            background-repeat: repeat-y ;
+
+        }
+        background-color: ;>>denotes the color of the background feature
+        backdrop-filter: ;>>defines the opacity of the background feature
+    }
+}

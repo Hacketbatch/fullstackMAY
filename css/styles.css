@@ -1,24 +1,32 @@
 *{
     font-size: 20px;
     font-style: italic;
+     margin: 0;
     font-weight: 900;
-    
+    align-items: center;
 }
-p{
+body{
+    margin: 0;
+    padding: 0;
+}
+.johnny{
     background-color: orange;
-    padding: 30px;
-    width: 30%;
-    margin: auto;
+    padding: 70px;
+    width: 70%;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
 }
 #hello{
     background-color: blue;
-    padding: 30px; 
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 70px;
+    width: 70%;
+    text-align: center;
+   
 }
 .jumping{
-    background-color: black !important;
-    padding: 45px;
-    margin-bottom: 30px;
-    color: white;
+  color: white;
 }
 #one{
     background-color: blue;
