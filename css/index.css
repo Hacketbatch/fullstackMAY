@@ -120,3 +120,49 @@ backgrounds{
         backdrop-filter: ;>>defines the opacity of the background feature
     }
 }
+displays>>refrers to the layout definition of the content of the container{
+    display can be in different categories {
+        flex>>the most common used display and this is because it offeres flexibility in the layout of the content of the container
+        grid >>this display iuses grid templtae row and template columns to define the amout of columns and rows in which a lenght of a container wioll span(2fr 3fr 3fr )
+        block >>by default a display is in block way >>content rack on top of eachother to the bottom 
+    }
+
+    flex>thiis is a display in the row directin by default and it can be changed to column direction by using the flex-direction property{
+        flex direction property can change the direction to :{
+            column>>items take the block format but flexible
+            row >>items take the horizontal format 
+            column-reverse>>interchange the direction  column 
+            row-reverse>>interchange direction of row 
+        }
+        flex-wrap>> this referes to containing the items in a flexible container and the items dynamically move with the chages to the container {
+            flex-wrap: wrap ;
+            flex-wrap: wrap-reverse ;inverts contents on changes to container size 
+            flex-wrap: nowrap;removes the wrapping 
+        }
+        justify-content>>means to align the content of a flexible container in relation to its neighbutring components {
+            justify-content: space-between ;>>which leaves equal space in between two contents 
+            justify-content:space-evenly>>leaves even ly spaces amongsts components 
+            justify-content:space-around>>leaves equal spaces around components 
+        }
+        justify-items>
+        align items>>this means to reposition the items in relation to the box model property 
+    }
+    flex grow>>the items targetted for the growth expands withthe ratio given  
+    flex shrink <the items targetted for the shrinking  reduces  withthe ratio given  
+    flex basis >>refers to the ration of items in relation to the parent size (a ratio is set to 1)
+
+} 
+positions >>this are key components in the motion of elements and contnet in a webpage 
+they are as follows {
+    position: static>>by default all elements are static in nature and once on scroll they are given motion 
+    position: relative>>this motion referes to movement in relation to the body element (the parent containers move in relation to the body)
+    position: absolute>>this refres to motion in relation to the parents margin and border box (the parent container is not affected by the child element)
+    position: fixed>>this means that the motion is fixed 
+    position: sticky>>this is motion in relation to certain break points 
+    all these positions are used in four ways {
+        top>>moves elements to the bottom 
+        bottom >>moves elements to the top 
+        left >>moves elements to the right 
+         right >>moves elements to the left 
+    }
+}
